@@ -1,0 +1,128 @@
+@keyframes slide-up{
+    from {margin-top: 50%;}
+}
+
+@keyframes fade-in{
+    from {opacity: 0;}
+    66% {opacity: 0;}
+}
+
+*{
+    font-family: serif;
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 22px;
+    animation-name: slide-up;
+    animation-duration: 2.0s;
+}
+
+body{
+    background-color: cyan;
+    background: linear-gradient(to right, rgb(255, 105, 105), violet, cyan,violet, rgb(255, 105, 105));
+
+}
+
+.container{   
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    background-color: white;
+    padding: 24px;
+    display: box;
+    border-radius: 24px;
+    justify-content: space-between;
+}
+
+.top-info, .mid-info, .bot-info{
+    display: box;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.info{
+    display: box;
+    background-color: white;
+    border-radius: 24px;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+}
+
+.top-info{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.bot-info{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.mid-info{
+    border-radius: 0px;
+}
+
+h1{
+    background-color: white;
+    text-align: center;
+    width: 15%;
+    margin-left: 43.25%;
+    padding: 2px;
+    border-radius: 24px;
+}
+
+h3{
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    margin-left: 32.75%;
+    padding: 2px;
+    border-radius: 24px;
+}
+
+h4, .info{
+    background-color: white;
+    text-align: center;
+    width: 30%;
+    margin-left: 35.25%;
+    padding: 2px;
+    border-radius: 24px;
+}
+
+h5{
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    margin-left: 32.75%;
+    padding: 2px;
+    border-radius: 24px;
+}
+
+.links{
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 16px;
+    width: 70%;
+    position:relative;
+    left: 15%;
+    animation-name: fade-in;
+    animation-duration: 3s;
+
+    a:link{
+        color: green;
+    }
+
+    a:visited{
+        color: blueviolet;
+    }
+
+    a:hover {
+        color: orange;
+      }
+}

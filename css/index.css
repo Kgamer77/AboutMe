@@ -1,0 +1,116 @@
+@keyframes slide-up{
+    from {margin-top: 50%;}
+}
+
+@keyframes fade-in{
+    from {opacity: 0;}
+    66% {opacity: 0;}
+}
+
+*{
+    font-family: serif;
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 22px;
+    animation-name: slide-up;
+    animation-duration: 2.0s;
+}
+
+body{
+    background-color: cyan;
+    background: linear-gradient(to right, rgb(255, 105, 105), violet, cyan,violet, rgb(255, 105, 105));
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    outline-color: black;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-bg{
+    background-color: white;
+    border-radius: 25px;
+    padding: 0px;
+    display: flex;
+    width: 12.5%;
+    margin-left: 44.50%;
+
+}
+
+.img-text{
+    transition: .5s ease;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    word-spacing: 1px;
+    line-height: 0px;
+}
+
+.img-bg:hover img{
+    opacity: 0.3;
+}
+
+.img-bg:hover .img-text{
+    opacity: 1;
+}
+
+.container{   
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    background-color: white;
+    padding: 24px;
+    display: box;
+    border-radius: 24px;
+    justify-content: space-between;
+}
+
+.info{
+    display: box;
+    background-color: white;
+    border-radius: 24px;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+}
+
+h1{
+    background-color: white;
+    text-align: center;
+    width: 15%;
+    margin-left: 43.25%;
+    padding: 2px;
+    border-radius: 24px;
+}
+
+.links{
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 16px;
+    width: 70%;
+    position:fixed;
+    bottom: 40px;
+    left: 15%;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    a:link{
+        color: green;
+    }
+
+    a:visited{
+        color: blueviolet;
+    }
+
+    a:hover {
+        color: orange;
+      }
+}
+
+
+
