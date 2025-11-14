@@ -8,8 +8,13 @@
 }
 
 @keyframes grow {
+    from {height: 25vh;}
+    to {height: 40vh;}
+}
+
+@keyframes grow-half {
     from {width: 25%;}
-    to {width: 75%;}
+    to {width: 50%;}
 }
 
 @keyframes growh {
@@ -41,10 +46,15 @@ body{
     justify-content: space-around;
     align-content: center;
     background-color: white;
-    padding: 16px;
-    border-radius: 24px;
-    width: 90%;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 2vw;
+    
+    width: 90vw;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 h1{
@@ -73,9 +83,10 @@ h4{
 }
 
 .icon{
-    width: 25%;
-    height: auto;
-    object-fit:scale-down;
+    width: auto;
+    height: 25vh;
+    max-height: 30vh;
+    max-width: 35vw;
     border-radius: 16px;
     animation-name: show;
     animation-duration: 1s;
@@ -86,7 +97,27 @@ h4{
     border-radius: 16px;
 }
 
+.half{
+    width: 50%;
+    height: auto;
+    display: none;
+    border-radius: 16px;
+}
+
 .info{
+    background-color: white;
+    text-align: center;
+    border-radius: 24px;
+    border: solid 2px black;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display:flexbox;
+    max-height: fit-content;
+    width: 50%;
+}
+
+.info-half{
     background-color: white;
     text-align: center;
     border-radius: 24px;
@@ -100,20 +131,32 @@ h4{
     text-align: center;
     border-radius: 24px;
     border: solid 2px black;
-    padding: 20px;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display:flexbox;
 
 }
 
 .info:hover{
-    height: 50vh;
+    height: 55vh;
+    max-height: fit-content;
     .full{
+        max-height: 40vh;
         animation-name: grow;
         animation-duration: 1s;
         display:initial;
-        width: 75%;
+        width: auto;
     }
     
-    .icon{
+    .half{
+        animation-name: grow-half;
+        animation-duration: 1s;
+        display:initial;
+        width: 50%;
+    }
+
+    .icon, .icon-half, .icon-double{
         display:none;
     }
 }
@@ -138,7 +181,7 @@ h4{
     animation-name: fade-in;
     animation-duration: 3s;
     background-color: white;
-    padding: 24px;
+    padding: 2px;
     border-radius: 24px;
 
 }
